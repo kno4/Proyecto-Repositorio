@@ -82,7 +82,7 @@ int main(){
     cout<<"-Podemos cruzar el bosque, ir a mi ciudad, buscar el pueblo humano mas cercano- exponiendo tus opciones"<<endl;
     cout<<"-Que quieres hacer?-"<<endl;
     cout<<"(Escribe A si quieres cruzar el bosque)\n(B si quieres ir a Renria)\n(C si quieres buscar un pueblo humano) \n(D si quieres salir de la historia interactiva)"<<endl;
-    cout<<"Tu vida actual es de "<< vida <<"Puntos de vida"<<endl;
+    cout<<"Tu vida actual es de "<< vida <<" Puntos de vida"<<endl;
     cin>>eleccion1;
     switch (eleccion1){
     case 'A':
@@ -104,7 +104,7 @@ int main(){
             cout<<"Amenzante empieza a correr en tu dirección mientras saca un cuchillo de su inmensa barba"<<endl;
             cout<<"Te quedas inmovil \n Jelash con su baston detiene al enano y lo neutraliza"<<endl;
             cout<<"(NO PIERDES VIDA)"<<endl;
-            cout<<"Tu vida actual es de "<< vida <<"Puntos de vida"<<endl;
+            cout<<"Tu vida actual es de "<< vida <<" Puntos de vida"<<endl;
             lugar = 'A';
         }
         else{
@@ -115,7 +115,7 @@ int main(){
             cout<<"De un arbol salta, lo que alcanzas a ver que es un enano y ves que empieza a correr \nen tu direccion con un cuchillo en la mano"<<endl;
             cout<<"Sientes un pinchazo en el abdomen y gritas mientras caes al suelo"<<endl;
             cout<<"(PIERDES 50 DE VIDA)"<<endl;
-            cout<<"Tu vida actual es de "<< vida - 50 <<"Puntos de vida"<<endl;
+            cout<<"Tu vida actual es de "<< vida - 50 <<" Puntos de vida"<<endl;
             vida = 50; 
             lugar = 'B';
        }
@@ -129,7 +129,7 @@ int main(){
         cout<<"Ves que hay muchas tiendas y espcaios nuevos, todos los ciuadanos tienen \norejas picudas y vestimentas extrañas para ti"<<endl;
         cout<<"-Quiza te abrumes por la ciudad, asi que, para descubir de donde vienes \npodemos ir con el rey, podemos ir a la biblioteca a ver si hay algun libro que lo diga \no podemos preguntarle a mi gran abuela en su casa"<<endl;
         cout<<"(A para visitar al rey) \n(B para ir a la biblioteca) \n(C para ir a la casa de Jelash)"<<endl;
-        cout<<"(Tu vida actual es de "<< vida <<"Puntos de vida)"<<endl;
+        cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
         cin>>cityLugar;
         switch(cityLugar){
             case 'A':
@@ -145,10 +145,10 @@ int main(){
                 cout<<"Sorprendido te quedas inmovil y sin saber que decir"<<endl;
                 cout<<"-Lamal no molestes a mi invitado- dice Jelash con un poco de rechazo"<<endl;
                 cout<<"Lamal la ignora"<<endl;
-                cout<<"-Es un duelo oficial, solo puño limpio-"<<endl;
+                cout<<"-Es un duelo oficial, solo mano limpia-"<<endl;
                 cout<<"Aun confundido y sin saber el porque del duelo preguntas a Jelash por un consejo"<<endl;
                 cout<<"-El siempre ha sido asi, si crees poder vencerlo, intentalo, el no es muy fuerte-"<<endl;
-                cout<<"(Tu vida actual es de "<< vida <<"Puntos de vida)"<<endl;
+                cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
                 cout<<"(S para aceptar el duelo, N para negarte)"<<endl;
                 cin>>dueloLamal;
                 if(dueloLamal=='s'||dueloLamal=='S'){
@@ -156,10 +156,10 @@ int main(){
                     cout<<"El se pone a un metro de ti y Jelash se pone como juez imparcial"<<endl;
                     cout<<"-El primero que conecte un golpe en la cara al rival sera el ganador- dice Jelash "<<endl;
                     cout<<"El duelo comienza y el tira el primer golpe hacia tu cara el cual esquivas con facilidad"<<endl;
-                    cout<<"Despues de un par de golpes y de un intecambio energetico de golpes y esquives \nLamal finta con un gope de derecha y luego te conecta un puñetazo en la mandibula que te deja tirado en el suelo"<<endl;
+                    cout<<"Despues de un par de golpes y de un intecambio energetico de golpes y esquives \nLamal finta con un golpe de derecha y luego te conecta un golpe en la mandibula que te deja tirado en el suelo"<<endl;
                     cout<<"Pierdes el duelo y Jelash te ayuda a levantarte"<<endl;
                     cout<<"(PIERDES 40 DE VIDA)"<<endl;
-                    cout<<"(Tu vida actual es de "<< vida-40 <<"Puntos de vida)"<<endl;
+                    cout<<"(Tu vida actual es de "<< vida-40 <<" Puntos de vida)"<<endl;
                     lugar='C';
                 }
                 else{
@@ -173,7 +173,7 @@ int main(){
             case 'B':
             case 'b':
                 cout<<"-Vayamos a la biblioteca, quiza ahi encontemos algo mas sobre mi pasado"<<endl;
-                
+
             break;
             case 'C':
             case 'c':
