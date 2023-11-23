@@ -2,6 +2,12 @@
 #include <string>
 using namespace std;
 
+void muerte(){
+    cout<<"(Tu vida ha llegado a 0 por lo que HAS MUERTO)"<<endl;
+    cout<<"HAS MUERTO"<<endl;
+    cout<<"GRACIAS POR JUGAR ESTA HISTORIA"<<endl;
+    cout<<"Saliendo del programa..."<<endl;
+}
 void pausa(){
     cout<<"Presiona ENTER para continuar";
     cin.ignore();
@@ -25,7 +31,7 @@ void creditos(){
     cout<<"Regresando al menu..."<<endl;
 }
 int main(){
-    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal;
+    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal, comidaMercado, alatel;
     string nombre;
     int vida = 100;
     do{
@@ -106,6 +112,7 @@ int main(){
             cout<<"(NO PIERDES VIDA)"<<endl;
             cout<<"Tu vida actual es de "<< vida <<" Puntos de vida"<<endl;
             lugar = 'A';
+            pausa();
         }
         else{
             cout<<"No le dices nada a Jelash y continuan su camino"<<endl;
@@ -118,6 +125,7 @@ int main(){
             cout<<"Tu vida actual es de "<< vida - 50 <<" Puntos de vida"<<endl;
             vida = 50; 
             lugar = 'B';
+            pausa();
        }
         break;
     case 'B':
@@ -160,7 +168,9 @@ int main(){
                     cout<<"Pierdes el duelo y Jelash te ayuda a levantarte"<<endl;
                     cout<<"(PIERDES 40 DE VIDA)"<<endl;
                     cout<<"(Tu vida actual es de "<< vida-40 <<" Puntos de vida)"<<endl;
+                    vida = 60;
                     lugar='C';
+                    pausa();
                 }
                 else{
                     cout<<"-No lo aceptare, me niego- dices con decision"<<endl;
@@ -168,16 +178,113 @@ int main(){
                     cout<<"(NO PIERDES VIDA)"<<endl;
                     cout<<"(Tu vida actual es de "<< vida <<"Puntos de vida)"<<endl;
                     lugar='D';
+                    pausa();
                 }
             break;
             case 'B':
             case 'b':
                 cout<<"-Vayamos a la biblioteca, quiza ahi encontemos algo mas sobre mi pasado"<<endl;
-
+                cout<<"-Claro, creo recordar que es por aca- dice Jelash con un poco de confusion"<<endl;
+                cout<<"Se adentran en un pasillo largo donde a los lados hay gente vendiendo cosas que no logras \nreconocer a primera vista"<<endl;
+                cout<<"-Te acuerdas cual es tu comida favorita "<< nombre <<"?"<< endl;
+                cout<<"Todavia sorprendido por la cantidad de artilugios y comifa que veias, no respondes la pregunta"<<endl;
+                cout<<"-Quieres probar algo?- se percata Jelash que estas viendo todo con mucho asombro"<<endl;
+                cout<<"Entre todas las cosas te llaman la atencion 3:"<<endl;
+                cout<<"Lo que parece ser una fruta, de un color morado brillante y de tamaño medio con lo que \nparecen ser espinas"<<endl;
+                cout<<"Un liquido blanquecino del que sale humo, pero no parece estar caliente"<<endl;
+                cout<<"Un pan que tiene forma de piramide con un centro carmin y bordes naranjas"<<endl;
+                cout<<"(A para probar la fruta) \n(B para el liquido blanquecino) \n(C para el panecillo en forma de piramide)"<<endl;
+                cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                cin>>comidaMercado;
+                switch (comidaMercado){
+                    case 'A':
+                    case 'a':
+                        cout<<"-Probare la fruta morada esa- dices mientras le indicas a Jelash lo que quieres"<<endl;
+                        cout<<"Ella paga la fruta y te la ofrece"<<endl;
+                        cout<<"-Eso que parecen espinas no lo son, no te preocupes- dice con un poco de burla"<<endl;
+                        cout<<"Con decision le das una mordida a la fruta e inmediatamente empiezas a sentirte mareado y confundido"<<endl;
+                        cout<<"Te sientas en el suelo y empiezas a sentir calor en el pecho y el cuello"<<endl;
+                        cout<<"-Creo que me voy a desmayar- dices con voz entrecortada"<<endl;
+                        cout<<"Te desmayas en medio de la multitud"<<endl;
+                        cout<<"(PIERDES 25 PUNTOS DE VIDA)"<<endl;
+                        cout<<"(Tu vida actual es de "<< vida - 25 <<" Puntos de vida)"<<endl;
+                        vida = 75;
+                        lugar = 'E';
+                        pausa();
+                    break;
+                    case 'B':
+                    case 'b':
+                        cout<<"-Que es ese liquido blanco?- Preguntas con curioisidad"<<endl;
+                        cout<<"Jelash sonrie -Es un licor poco conocido por los humanos-"<<endl;
+                        cout<<"-Pruebalo, seguro te gustara- mientras paga el licor"<<endl;
+                        cout<<"Lo tomas y con alguna duda le das un trago profundo a nada de acabarlo"<<endl;
+                        cout<<"-Si, creo que sabe bien- y le vuelves a dar otro trago acabandotelo"<<endl;
+                        cout<<"En menos de 30 segundo te empiezas a marear y todo te da vueltas"<<endl;
+                        cout<<"Tras caminar unos pasos, mientras Jelash te dice algo que no escuchas bien \nte caes al suelo pegandote fuerte con una baldosa que estaba quebrada en el suelo"<<endl;
+                        cout<<"(PIERDES 100 PUNTOS DE VIDA)"<<endl;
+                        cout<<"(Tu vida actual es de "<< vida - 100 <<" Puntos de vida)"<<endl;
+                        muerte();
+                        pausa();
+                        return 0;
+                    break;
+                    case 'C':
+                    case 'c':
+                        cout<<"-Ese panecillo se ve rico- dices con curiosidad"<<endl;
+                        cout<<"-Si, es muy rico, tiene frutas elficas y sabe a chocolate-"<<endl;
+                        cout<<"Sorprendido ves el panecillo de cerca y te decides por darle un bocado"<<endl;
+                        cout<<"Al darle la mordida sientes el sabor a chocolate inmediatamente y una \nexplosion de sabores ocurre en tu boca"<<endl;
+                        cout<<"-Si que sabe riquisimo, creo que quiero otro- masticas mientras sonries"<<endl;
+                        cout<<"(GANAS 20 PUNTOS DE VIDA)"<<endl;
+                        vida = 120;
+                        cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                        lugar = 'E';
+                        pausa();
+                    break;
+                    default:
+                    break;
+                }
             break;
             case 'C':
             case 'c':
-
+                cout<<"-Vayamos a visitar a tu gran abuela, los ancianos siempre son muy sabios-"<<endl;
+                cout<<"Se rie levemente mientras te toma la mano para echarse a correr"<<endl;
+                cout<<"Corren por las calles de la ciudad hasta llegar a una casa grande muy ornamentada"<<endl;
+                cout<<"-Es aqui, no hables demasiado fuerte, sus oidos son muy sensibles- Jelash advierte"<<endl;
+                cout<<"Jadeando y tratando de mantener la compostura te irgues y asientes"<<endl;
+                cout<<"-Vamos, hay que entrar- abre la puerta y un olor muy peculiar inunda tu olfato"<<endl;
+                cout<<"-Estan preparando alatel, mi bebida favorita"<<endl;
+                cout<<"Confundido preguntas, pero Jelash te ignora por saludar a quien supones es su madre"<<endl;
+                cout<<"-Traes un visitante, cual es el motivo Jel?- dice la elfa desconocida"<<endl;
+                cout<<"-No sabemos de donde viene y no se acuerda de donde viene-"<<endl;
+                cout<<"-Jelash cree que su gran abuela puede ser de ayuda- dices un poco timido"<<endl;
+                cout<<"-Ya veo, pudiste habernos avisado Jel, tu abuela esta ocupada ahora mismo- dice la madre de Jelash"<<endl;
+                cout<<"-Por lo que percibo estan preparando alatel- Jelash sonrie emocionada"<<endl;
+                cout<<"-Si, tu abuela queria sorpenderte-"<<endl;
+                cout<<"-Debes probarlo "<< nombre <<"- Jelash corre hasta la cocina y te entrega una taza \ncon un poco del liquido sugerido"<<endl;
+                cout<<"La bebida es rosa y un poco espesa"<<endl;
+                cout<<"(S para probarlo, N para no probarlo)"<<endl;
+                cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                cin>>alatel;
+                if(alatel == 'S' ||alatel=='s'){
+                    cout<<"Decides hacer caso a Jelash y le das un sorbo al liquido rosa"<<endl;
+                    cout<<"Con un poco de incertidumbre empiezas a sentir un sabor extrañisimo"<<endl;
+                    cout<<"Empiezas a sentir sabor en el estomago"<<endl;
+                    cout<<"Ella te mira con expectacion y sonrie"<<endl;
+                    cout<<"-Y?, que tal?- Jelash emocionada"<<endl;
+                    cout<<"-Es extraño, pero creo que me gusta"<<endl;
+                    cout<<"(GANAS 20 PUNTOS DE VIDA)"<<endl;
+                    vida = 120;
+                    cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                    lugar = 'F';
+                    pausa(); 
+                }
+                else{
+                    cout<<"-Creo que por ahora paso- dices agradecido pero dejando la taza en la mesa"<<endl;
+                    cout<<"Jelash se pone un poco triste pero sigue platicando con su madre"<<endl;
+                    cout<<"(NO PIERDES PUNTOS DE VIDA)"<<endl;
+                    lugar = 'F';
+                    pausa();
+                }
             break;
         }
         break;
@@ -203,6 +310,15 @@ int main(){
         break;
         case 'C':
         
+        break;
+        case 'D':
+        
+        break;
+        case 'E':
+
+        break;
+        case 'F':
+
         break;
     }
     return 0;
