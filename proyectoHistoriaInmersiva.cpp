@@ -1,7 +1,5 @@
 #include <iostream>
 #include <string>
-#include<stdlib.h>
-#include<time.h>
 using namespace std;
 
 void muerte(){
@@ -33,7 +31,7 @@ void creditos(){
     cout<<"Regresando al menu..."<<endl;
 }
 int main(){
-    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal, comidaMercado, alatel;
+    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal, comidaMercado, alatel, cruzarLago, felinoAtaque, armaBosque;
     string nombre;
     int vida = 100;
     do{
@@ -311,7 +309,131 @@ int main(){
             cout<<"-En barca lo cruzariamos en 30 minutos y si lo rodean se harian una \nhora y media- dice el enano aun sin terminar la frase entera"<<endl;
             cout<<"-Yo cobro 350 platins por ayudarles a cruzar o les rento la barca por 50-"<<endl;
             cout<<"Revisas tus bolsas y bolsillos y ves que tienes una bolsa con lo que \nparecen ser monedas"<<endl;
-            cout<<"Revisas la bolsa y ceuntas el valro de las monedas que tienes"<<endl;
+            cout<<"Revisas la bolsa y cuentas el valor de las monedas que tienes"<<endl;
+            cout<<"Tienes 25 platins"<<endl;
+            cout<<"-Solo tengo 25, tu tienes mas?- le preguntas a Jelash y ella asiente"<<endl;
+            cout<<"-Tengo 40, por lo que no nos aclanza para el camino guiado- dice pensativa"<<endl;
+            cout<<"-Podemos rentar el barco o podemos rodear el lago y guardar ese \ndinero para despues- dice mirando hacia el bosque que rodea el lago "<<endl;
+            cout<<"-Quieres cruzar el lago?- pregunta Jelash"<<endl;
+            cout<<"(S para rentar la barca, N para rodear el lago por el bosque)"<<endl;
+            cin>>cruzarLago;
+            cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+            if(cruzarLago=='S'||cruzarLago=='s'){
+                cout<<"-Si, rentemos la barca, quisiera llegar rapido a la aldea-"<<endl;
+                cout<<"Le das tus platins a Jelash y ella renta la barca para pasar el lago"<<endl;
+                cout<<"-Okey, sube, alguien tiene que remar- dice Jelash mirnaod los remos"<<endl;
+                cout<<"Se suben a la barca y tu tomas los remos para empezar a cruzar por el lago-"<<endl;
+                cout<<"-A un ritmo constante deberiamos tardarnos 40 min, creo fue una buena eleccion-"<<endl;
+                cout<<"Comienzas a remar en direccion a la otra punta del lago"<<endl;
+                cout<<"Tras 10 min de remar se encuentran ya lejos de la orilla"<<endl;
+                cout<<"El agua cristalina bajo la barca te permite ver diversos peces y \nanimales que los acompañan en su camino"<<endl;
+                cout<<"-Ninguno es agresivo, cierto?- preguntas un poco asombrado"<<endl;
+                cout<<"-No te atacaran al menos que los ataques primero-"<<endl;
+                cout<<"Continuas remando hasta la orila, tardaron 50 min y te duelen los brazos a mas no poder"<<endl;
+                lugar='G';
+            }
+            else{
+                cout<<"-Creo que deberiamos guardar los platins-"<<endl;
+                cout<<"-Vamos por la orilla entre el bosque-"<<endl;
+                cout<<"-Claro, gracias señor enano- dice Jelash con amabilidad"<<endl;
+                cout<<"-Nos tomara aproximadamente hora y media si caminamos \na un buen ritmo- Jelash empieza a caminar y tu le sigues"<<endl;
+                cout<<"-Caminemos, entonces-"<<endl;
+                cout<<"Caminan por 30 min, la charla con Jelash no disminuye \nmientras se sumen en el bosque"<<endl;
+                cout<<"Los interrumpe un sonido de algo que cae, como un fuerte golpe en seco contra el suelo"<<endl;
+                cout<<"Miras a Jelash y ella solo indica que guarden silencio mientras siguen caminando"<<endl;
+                cout<<"Tras 2 min de silencio y un poco de tension, unos pasos pesados \nse escuchan a la derecha del camino"<<endl;
+                cout<<"Como si se estuviera acercando cada vez se escucha mas cercanos"<<endl;
+                cout<<"Vuelves a mirar con preocupacion a Jelash y te pide que te pongas detras de ella"<<endl;
+                cout<<"Señala con su baston a un punto entre los arboles y un diminuto \nrayo de luz sale de la punta"<<endl;
+                cout<<"De inmediato se escuha un golpe y algo sale de entre los arboles"<<endl;
+                cout<<"Una especie de tigre color verde oscuro se lanza contra los 2 y los ataca"<<endl;
+                cout<<"Ves que esta herido en el lomo"<<endl;
+                cout<<"Comienza a correr contra Jelash"<<endl;
+                cout<<"-Corre!, yo puedo encargarme- mientras con el baston se cubre \nde los zarpazos de el felino enorme"<<endl;
+                cout<<"(A para correr hasta un lugar seguro) \n(B para intentar ayudar a Jelash) \n(C para quedarte mirando)"<<endl;
+                cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                do{
+                    cin>>felinoAtaque;
+                    switch(felinoAtaque){
+                    case 'a':
+                    case 'A':
+                        cout<<"Comienzas a correr siguiendo el camino como te dijo Jelash"<<endl;
+                        cout<<"Esperas que ella este bien, pero tenias que ver primero por ti"<<endl;
+                        cout<<"Despues de 10 minutos de estar corriendo te detienes en un arbol y descansas unos instantes"<<endl;
+                        cout<<"Volteas la vista y no ves ni escuchas nada de donde saliste corriendo"<<endl;
+                        cout<<"Decides esperar ahi un rato para ver si llega Jelash"<<endl;
+                        cout<<"Te sientas bajo el arbol, alerta pero descansando"<<endl;
+                        cout<<"Pasan 15 minutos y escuchas pasos acercandose"<<endl;
+                        cout<<"Jelash sonriente te mira y saluda"<<endl;
+                        cout<<"-Si que saliste corriendo rapido eh- se burla de ti"<<endl;
+                        cout<<"-Estas bien?, como termino todo?- tu voz llena de preopucacion mientras te acerca a ella"<<endl;
+                        cout<<"-Claro, estoy bien, no te preocupes, continuamos con el camino?-"<<endl;
+                        cout<<"Charlan mientras empiezan a caminar y tras otros 30 minutos llegan al embarcadero"<<endl;
+                        lugar='G';
+                    break;
+                    case 'b':
+                    case 'B':
+                        cout<<"Decides ayudarla de alguna manera y corres a esconderte en la maleza"<<endl;
+                        cout<<"Encuentras una piedra grande y al lado un palo que parece afilado"<<endl;
+                        cout<<"(A para tomar la piedra y B para tomar el palo)"<<endl;
+                        cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                        do{
+                            cin>>armaBosque;
+                            if(armaBosque=='A'||armaBosque=='a'){
+                                cout<<"Tomas la piedra con las 2 manos y la alzas sobre \ntu cabeza y corres hasta el felino que esta sobre Jelash "<<endl;
+                                cout<<"Con un golpe en seco le das en la cabeza al felino y Jelash con su baston y \nun rayo de luz ataca de nuevo al felino atravesandolo y dejandolo en el suelo"<<endl;
+                                cout<<"Jelash te mira y sonrie"<<endl;
+                                cout<<"-Creo que me las hubiera arreglado yo sola- dice mientras se levanta"<<endl;
+                                cout<<"-Ni un gracias ni nada?- te ries y miras el camino"<<endl;
+                                cout<<"-Nos encontraremos con mas?- preguntas con sinceridad"<<endl;
+                                cout<<"-No lo creo, esta vez no estaremos desprevenidos-"<<endl;
+                                cout<<"-Vamonos, tenemos que llegar al embarcadero- dices con seguridad"<<endl;
+                                cout<<"Despues de unos minutos de caminar llegan por fin al embarcadero"<<endl;
+                                lugar='G';
+                            }
+                            else{
+                                cout<<"Tomas el palo afilado y aunque parece endeble lo agarras con fuerza"<<endl;
+                                cout<<"Corriendo y como si fuera una lanza sostienes el palo"<<endl;
+                                cout<<"Intentas atravesar al felino con el palo"<<endl;
+                                cout<<"El palo se rompe contra la piel del felino y te qeudas inmovil frente al felino"<<endl;
+                                cout<<"El felino te da un zarpazo en el brazo y se lanza contra ti mordiendote en el cuello"<<endl;
+                                cout<<"(PIERDES 100 PUNTOS DE VIDA)"<<endl;
+                                cout<<"(Tu vida actual es de "<< vida - 100 <<" Puntos de vida)"<<endl;
+                                muerte();
+                                pausa();
+                                return 0;
+                            }
+                        }
+                        while(armaBosque=='A'&&armaBosque=='a'&&armaBosque=='b'&&armaBosque=='B');
+                    break;
+                    case 'C':
+                    case 'c':
+                        cout<<"Te qeudas quieto frente a tal escena, no sabes que hacer"<<endl;
+                        cout<<"El felino ve tu inseuridad y te ve con amenaza"<<endl;
+                        cout<<"En un instante, el felino corre tras de ti"<<endl;
+                        cout<<"Empiezas a correr de el tan rapido como puedes"<<endl;
+                        cout<<"Te escondes tras un arbol y el felino va detras de ti soltando \nzarpasos, uno te da en el brazo, pero sigues en pie"<<endl;
+                        cout<<"Sigues tratando de escapar del felino, Jelash se levanta y apunta con su baston"<<endl;
+                        cout<<"Un rayo mas grande de color azul sale de la punta del baston de Jelash"<<endl;
+                        cout<<"No comprendes que es su magia, pero el felino ha dejado de rugir"<<endl;
+                        cout<<"Ella te ve y sonrie"<<endl;
+                        cout<<"-Estas bien?, creo que ya no se va a levantar- apunta a tu herida en el brazo"<<endl;
+                        cout<<"-Estoy bien, creo que es una herida grande-"<<endl;
+                        cout<<"-Ya lo veo, apresuremos a llegar para que te sanen esa herida-"<<endl;
+                        cout<<"Te venda la herida con trozos de tela que saca de su gabardina"<<endl;
+                        cout<<"Charlan en el camino de ida al embarcadero"<<endl;
+                        cout<<"Tras 40 minutos llegan al embarcadero como lo tenian planeado"<<endl;
+                        cout<<"(PIERDES 45 PUNTOS DE VIDA)"<<endl;
+                        vida = 55;
+                        cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                        lugar='G';
+                    break;
+                    default:
+                        cout<<"(Esta opcion no es valida, elige una correcta)"<<endl;
+                    }
+                }
+                while(felinoAtaque=='a'&&felinoAtaque=='A'&&felinoAtaque=='B'&&felinoAtaque=='b'&&felinoAtaque=='c'&&felinoAtaque=='C');
+            }
             break;
         case 'D':
         case 'd':
@@ -341,6 +463,9 @@ int main(){
 
         break;
         case 'F':
+
+        break;
+        case 'G':
 
         break;
     }
