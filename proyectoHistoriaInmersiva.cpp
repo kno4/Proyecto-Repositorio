@@ -4,7 +4,7 @@ using namespace std;
 
 void final(){
     cout<<"(CONTINUARA?...)"<<endl;
-    cout<<"HAS TERMINADO LA HISTORIA"<<endl;
+    cout<<"HAS TERMINADO  ESTA PARTE DE LA HISTORIA"<<endl;
     cout<<"Has llegado a un final, vuelve a jugar para descubir los demas finales"<<endl;
     cout<<"GRACIAS POR JUGAR ESTA HISTORIA"<<endl;
     cout<<"Saliendo del programa..."<<endl;
@@ -38,7 +38,7 @@ void creditos(){
     cout<<"Regresando al menu..."<<endl;
 }
 int main(){
-    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal, comidaMercado, alatel, cruzarLago, felinoAtaque, armaBosque, apuestaTaberna, destHospital, lectura;
+    char eleccion1, sombraMovA, opcionMenu, lugar, cityLugar, dueloLamal, comidaMercado, alatel, cruzarLago, felinoAtaque, armaBosque, apuestaTaberna, destHospital, lectura, lastUbi;
     string nombre;
     int vida = 100;
     do{
@@ -217,9 +217,9 @@ int main(){
                                     cout<<"Te sientas en el suelo y empiezas a sentir calor en el pecho y el cuello"<<endl;
                                     cout<<"-Creo que me voy a desmayar- dices con voz entrecortada"<<endl;
                                     cout<<"Te desmayas en medio de la multitud"<<endl;
-                                    cout<<"(PIERDES 25 PUNTOS DE VIDA)"<<endl;
-                                    cout<<"(Tu vida actual es de "<< vida - 25 <<" Puntos de vida)"<<endl;
-                                    vida = 75;
+                                    cout<<"(PIERDES 40 PUNTOS DE VIDA)"<<endl;
+                                    cout<<"(Tu vida actual es de "<< vida - 40 <<" Puntos de vida)"<<endl;
+                                    vida = 60;
                                     lugar = 'D';
                                     pausa();
                                 break;
@@ -693,7 +693,7 @@ int main(){
                 cout<<"Despues de multiples familiaridades con lo que lees pasas al siguiente libro"<<endl;
                 cout<<"Parece que Jelash termino los 2 primeros"<<endl;
                 cout<<"-Encontraste algo, Jelash?- preguntas un poco cansado"<<endl;
-                cout<<"-Nada que no supiera "<<nombre<<" , lo siento, creo que no fue muy util-"<<endl;
+                cout<<"-Nada que no supiera "<<nombre<<", lo siento, creo que no fue muy util-"<<endl;
                 cout<<"Triste y sin animos te levantas"<<endl;
                 cout<<"-De todas maneras, Jelash, muchas gracias por la \nayuda, creo que lo que has hecho por mi no te lo pdoria pagar en mi vida-"<<endl;
                 cout<<"Jelash evoca una de sus tipicas sonrisas amables"<<endl;
@@ -714,7 +714,7 @@ int main(){
                 cout<<"-Algo me llamo la atencion de este libro pero igual es inservible-"<<endl;
                 cout<<"En cuanto empiezas a leer el libro todo es muy familiar, las frases, los reyes, todo parece ser conocido"<<endl;
                 cout<<"Todo parece como si ya lo hubieras leido, pero continuas"<<endl;
-                cout<<"Llegas a la parte de actualidad, donde ves que la actual reina es un nombre familiar, su nombre te resuena una y otra vez"<<endl;
+                cout<<"Llegas a la parte de actualidad, donde ves que la actual \nreina es un nombre familiar, su nombre te resuena una y otra vez"<<endl;
                 cout<<"Piensas que quiza estas delirando y pasas la pagina"<<endl;
                 cout<<"Cuando menos lo esperas"<<endl;
                 cout<<"'La reina Malika tuvo gemelos a quienes les puso Manel y "<<nombre<<" entre ellos estara el proximo rey de Mikal'"<<endl;
@@ -723,16 +723,229 @@ int main(){
                 cout<<"Jelash no responde directamente a tu pregunta"<<endl;
                 cout<<"-Parece un libro de la Familia Mikal, te es conocido alguno?-"<<endl;
                 cout<<"-Realmente todo me parece Familiar- dices apresuradamente"<<endl;
-                cout<<"-No sabria decirte porque "<<nombre<<" , para mi tambien es extraño-"<<endl;
+                cout<<"-No sabria decirte porque "<<nombre<<", para mi tambien es extraño-"<<endl;
                 cout<<"Tu mente empieza a hilar situaciones, frases, nombres"<<endl;
                 cout<<"De pronto decides que vas a ir a Mikal con ese libro para \nver si alguien te conoce o te puede ayudar en la busqueda"<<endl;
+                cout<<"-Mañana saldre a ese reino humano del que habla el \nlibro, quiza alguien sepa algo de mi-"<<endl;
+                cout<<"-Me parece una buena idea- amablemente Jelash intenta mantener la sonrisa"<<endl;
+                cout<<"Rentas el libro en tus manos por 10 Platins que tenias"<<endl;
+                cout<<"Salen de la biblioteca unos minutos minutos despues"<<endl;
+                cout<<"-Parece que esta empezando a oscurecer, Jelash"<<endl;
+                cout<<"-Me parece que tenemos tiempo para ir a visitar otro \nlugar, la noche es tranquila en Renria-"<<endl;
+                cout<<"-De acuerdo-"<<endl;
+                cout<<"-Sugiero ir a una mazmorra, a la torre del reloj o a el Jardin inestable-"<<endl;
+                cout<<"(Tu vida actual es de "<< vida <<" Puntos de vida)"<<endl;
+                cout<<"(A Para ir a la mazmorra) \n(B para ir a la torre del reloj) \n(C para ir al Jardin inestable)"<<endl;
+                do{
+                    cin>>lastUbi;
+                    switch(lastUbi){
+                    case 'A':
+                    case 'a':
+                        cout<<"-Vayamos a la mazmorra, algo de ejercicio fisicio no me haria mal-"<<endl;
+                        cout<<"Van directo y sin mucha mas palabra hasta una mazmorra cercana a la biblioteca"<<endl;
+                        cout<<"Llegan a la mazmorra y pagan la entrada al cuidador"<<endl;
+                        cout<<"-Una mazmorra es un sitio en el que se viene a entrenar las capacidades fisicas o magicas-"<<endl;
+                        cout<<"-Jelash, creo que conozco el funcionamiento-"<<endl;
+                        cout<<"-De acuerdo-"<<endl;
+                        cout<<"Se adentran en la mazmorra y empiezan a caminar por un sendero \niluminado por una antorcha que les dio el cuidador"<<endl;
+                        cout<<"A los pocos minutos, un lobo enorme con cola gris y todo el demas pelaje azul \nmuy oscuro sale a la vista de ambos para intentar atacarlos"<<endl;
+                        cout<<"Se pone en posicion de atacar y tu con una habilidad que no sabias que tenias esquivas bien"<<endl;
+                        cout<<"Esquivas mas de un golpe y con la ayuda de la espada que te obsequian en la entrada terminas por matarlo"<<endl;
+                        cout<<"Siguen caminando mas profundo en la mazmorra, saben que enter mas se adentren mas \nnumerosos o peligrosos seran los enemigos"<<endl;
+                        cout<<"No hay una regla que diga que no puedes morir en la mazmorra"<<endl;
+                        cout<<"Encuentran un letrero que indica 'En este pasillo salen mounstruos con un \nnivel de capacidades similar al que posees'"<<endl;
+                        cout<<"-Bah, ya me aburri de matarlos de un golpe, entremos-"<<endl;
+                        cout<<"Entren al pasillo y en menos de tres segundos un enorme bicho de mas de 2 metros aparece frente a ustedes"<<endl;
+                        cout<<"Jelash se sorpende, parece nunca haber visto un mounstruo tan peculiar"<<endl;
+                        cout<<"Te diriges contra el y con la espalda por encima de tu cabeza realizas un corte en diagonal"<<endl;
+                        cout<<"La hoja impacta contra la piel del bicho"<<endl;
+                        cout<<"No le hace daño"<<endl;
+                        cout<<"-Jelash, me puedes ayudar?- Jelash permanecia quieta hasta el instante en que le pides ayuda"<<endl;
+                        cout<<"El bicho reacciona con un golpe en seco el cual esquivas por nada"<<endl;
+                        cout<<"Jelash hace aparecer su baston y con un rayo enorme de luz atraviesa al bicho"<<endl;
+                        cout<<"Parece no haber muerto y con un ultimo golpe logras cortarle la cabeza, rematandolo"<<endl;
+                        cout<<"-Ese bicho era de un nivel similar al mio "<<nombre<<", jamas hubieras podido con el-"<<endl;
+                        cout<<"-No pense que fueras tan fuerte- dices con claro asombro"<<endl;
+                        cout<<"Tras 15 segundos caminando, una serpiente de unos 10 metros de largo aparece frente a los 2"<<endl;
+                        cout<<"Con la ayuda de Jelash y tu como distraccion los mounstros que aparecian \nterminaban por morir a los pocos minutos de aparecer"<<endl;
+                        cout<<"Se dirigen fuera del pasillo, pero justo en el ultimo instante atras de ustedes un sonido extraño les interrumpe"<<endl; 
+                        cout<<"Volteas y ves un aterrador mounstro que no sabes describir"<<endl;
+                        cout<<"-Jelash, que es eso?-"<<endl;
+                        cout<<"Ella voltea justo antes de que termines la frase y un hueso que salia de la mano del \nmounstro atraviesa tu brazo y el lateral del abdomen de Jelash"<<endl;
+                        cout<<"El dolor inunda tu pecho y el hueso tan extraño sale de tu cuero y el de ella"<<endl;
+                        cout<<"Corres directo a la salida del pasillo y ves que Jelash se queda atras"<<endl;
+                        cout<<"Piensas en dejarla atras, pero tu cuerpo no te lo permite, ella no lo haria"<<endl;
+                        cout<<"Sin pensarlo pero con muchas fuerzas, blandes la espada contra el mounstruo y cortas su cabeza"<<endl;
+                        cout<<"No parece muy fuerte, quiza solaemnete era muy rapido"<<endl;
+                        cout<<"Jelash no soporta el dolor y cae de rodillas, sosteniendose unicamente de su baston"<<endl;
+                        cout<<"-Jelash, aguanta, ya saldremos de aqui- claramente estas a punto del shock"<<endl;
+                        cout<<"-Tu magia no cura?- preguntas mientras le intentas cargar"<<endl;
+                        cout<<"-No lo hace a mi misma- la voz entrecortada "<<endl;
+                        cout<<"Jelash empieza a perder mucha sangre, la sangre elfa era de un tono rojo claro \ncremoso muy peculiar para ti"<<endl;
+                        cout<<"Con la sangre, tambien empieza a perder nocion y conocimiento"<<endl;
+                        cout<<"-Aguanta Jelash, aguanta- tu voz era muy desesperada y cargabas con ella mientras salias en busqueda de ayuda"<<endl;
+                        cout<<"Jelash mueve los labios como intentando decir algo"<<endl;
+                        cout<<"-Siempre fuiste como... cuida de... seras ... trono-"<<endl;
+                        cout<<"Sus palabras resuenan en tu mente"<<endl;
+                        cout<<"Jelash muere en tus brazos y no puedes ayudarla"<<endl;
+                        final();
+                    break;
+                    case 'B':
+                    case 'b':
+                        cout<<"-Donde queda la torre del reloj?- "<<endl;
+                        cout<<"Salen a la calle y ella apunta con el dedo una torre enorme"<<endl;
+                        cout<<"-Claramente porque es una torre y en ella hay un reloj enorme- Jelash sonrie como siempre"<<endl;
+                        cout<<"Las bromas y sonrisa de Jelash siempre eran muy familiares"<<endl;
+                        cout<<"Caminaron hasta la torre del reloj, donde por 5 platins por cada uno les dejaban subir a la torre"<<endl;
+                        cout<<"Pagas tu entrada y las escaleras empiezan a subir frente a ti"<<endl;
+                        cout<<"-Que tan alto es esto, Jelash?- miras hacia arriba y no ves el  techo"<<endl;
+                        cout<<"-Unos 40 metros- expresa mucha tranquilidad"<<endl;
+                        cout<<"Tras 20 minutos de charla, muchas escaleras y dolor en las piernas llegan a el balcon"<<endl;
+                        cout<<"Ves el cielo estrellado, dos lunas y una vista increible de Renria"<<endl;
+                        cout<<"-Como podria olvidar algo tan bello- Jelash no responde"<<endl;
+                        cout<<"-Muchas gracias Jelash, sin ti verdaderamente estaria solo y sin rumbo"<<endl;
+                        cout<<"Jelash sonrie mas que nunca"<<endl;
+                        cout<<"-Todo esto ha sido una prueba de su madre la reina- dice con mucha calma"<<endl;
+                        cout<<"-Ella queria ver si usted tenia lo necesario para heredar el trono-"<<endl;
+                        cout<<"Todo es muy rapido y solo puedes asombrarte"<<endl;
+                        cout<<"-Yo solo podria ayudarlo si me pedia la ayuda explicitamente incluso \nsi la muerte era inminente para usted-"<<endl;
+                        cout<<"-La unica manera de saber si era usted apto, era que dijera Gracias-"<<endl;
+                        cout<<"-Maniana recordara todo, el hechizo solo dura un dia"<<endl;
+                        cout<<"Sin palabras empieza a haber muchos huecos en tu mente y poco a poco te vas acordando de las cosas"<<endl;
+                        final();
+                    break;
+                    case 'c':
+                    case 'C':
+                        cout<<"-Porque se llama Jardin inestable?- preguntas con mucha curiosidad"<<endl;
+                        cout<<"-Quieres descubrirlo?- Jelash evoca una sonrisa de las suyas"<<endl;
+                        cout<<"-Naturalemente, espero que la curiosidad no mate al gato-"<<endl;
+                        cout<<"Caminan por las calles y avenidas de Renria en el atardecer"<<endl;
+                        cout<<"Llegan al dichoso Jardin"<<endl;
+                        cout<<"Una cupula de vidrio con lo que claramente son plantas adentro aparece frente a tus ojos"<<endl;
+                        cout<<"Cuando entran te das cuenta que las plantas son de diferentes tonos"<<endl;
+                        cout<<"Tallos morados, amarillos y hasta narajas"<<endl;
+                        cout<<"Plantas grandes, chicas, muy diminutas y peculiares"<<endl;
+                        cout<<"-Todas estas plantas tienen su funcion- Jelash parece conocer muchas plantas"<<endl;
+                        cout<<"-No deberias tocar ninguna, hay una que otra peligrosa por ahi- Jelash \nve tu intencion de tocarlas"<<endl;
+                        cout<<"Una flor en especial llama tu atencion"<<endl;
+                        cout<<"Color azul claro, unica en su planta, parecia estar sola"<<endl;
+                        cout<<"Era simple pero indescriptible"<<endl;
+                        cout<<"Aquella flor te enamoro"<<endl;
+                        cout<<"-Esa planta que llevas viendo 5 minutos es la ultima en su especie-"<<endl;
+                        cout<<"-Es hermosa... puedo tocarla?- te aventuras a decir"<<endl;
+                        cout<<"-Si la tocas hay una probabilidad de que mueras- esta vez no parecia \nser una broma"<<endl;
+                        cout<<"Sin pensarlo demasiado y sin medir las consecuencias pasas una mano por los petalos de esa flor"<<endl;
+                        cout<<"Los dedos empiezan a pesarte y una sensacion de adormecimiento te \nrecorre el cuerpo hasta la punta de los pies"<<endl;
+                        
+                        if(vida>=70){
+                            cout<<"Tras unos segundos la sensacion se hace mas fuerte, pero no dejas de tocar la flor"<<endl;
+                            cout<<"Como si su tacto fuera lo unico que importa"<<endl;
+                            cout<<"Tras unos instantes, vuelves a la conciencia y sueltas la flor"<<endl;
+                            cout<<"Todo el brazo lo tienes adormecido pero sientes como si no fuera a pasar mucho mas"<<endl;
+                            cout<<"-Creo que no me mato- dices con una sonrisa"<<endl;
+                            cout<<"-Eso parece, hubieras muerto tras 2 segundos de tocarla-"<<endl;
+                            cout<<"La belleza de la flor y el aroma del jardin a tu alrededor te \nponen a pensar en tu pasado y en tu camino"<<endl;
+                            cout<<"-Como podria olvidar algo tan bello- Jelash no responde"<<endl;
+                            cout<<"-Muchas gracias Jelash, sin ti verdaderamente estaria solo y sin rumbo"<<endl;
+                            cout<<"Jelash sonrie mas que nunca"<<endl;
+                            cout<<"-Todo esto ha sido una prueba de su madre la reina- dice con mucha calma"<<endl;
+                            cout<<"-Ella queria ver si usted tenia lo necesario para heredar el trono-"<<endl;
+                            cout<<"Todo es muy rapido y solo puedes asombrarte"<<endl;
+                            cout<<"-Yo solo podria ayudarlo si me pedia la ayuda explicitamente incluso \nsi la muerte era inminente para usted-"<<endl;
+                            cout<<"-La unica manera de saber si era usted apto, era que dijera Gracias-"<<endl;
+                            cout<<"-Maniana recordara todo, el hechizo solo dura un dia"<<endl;
+                            cout<<"Sin palabras empieza a haber muchos huecos en tu mente y poco a poco te vas acordando de las cosas"<<endl;
+                            final();
+                        }
+                        else{
+                            cout<<"Tras un segundo la sensacion se hace mas fuerte, pero no dejas de tocar la flor"<<endl;
+                            cout<<"Sin duda algo en tu pecho deja de moverse"<<endl;
+                            cout<<"No puedes respirar, tu corazon ya no se siente latir"<<endl;
+                            cout<<"Poco a poco vas dejando de tocar la flor"<<endl;
+                            cout<<"Jelash solo te sostiene antes de caer"<<endl;
+                            cout<<"Aceptas tu muerte, quiza no fue lo mejor, pero tocaste esa hermosa flor"<<endl;
+                            cout<<"Jelash pronucnia algo que apenas puedes escuchar"<<endl;
+                            cout<<"-La vida es tan hermosa que te da oportunidad de quitartela- unas lagrimas se asoman en sus ojos"<<endl;
+                            cout<<"Dejas de sentir todo a tu alrededor y mueres"<<endl;
+                            cout<<"(HAS MUERTO)"<<endl;
+                            final();
+                        }
+                    break;
+                    default:
+                        cout<<"(ESTA OPCION NO ES VALIDA, ELIGA UNA VALIDA PARA CONTINUAR)"<<endl;
+                    break;
+                    }
+                }
+                while(lastUbi=='a'&&lastUbi=='A'&&lastUbi=='b'&&lastUbi=='B'&&lastUbi=='c'&&lastUbi=='C');
             }
         break;
         case 'E':
-
+            cout<<"Tras unos minutos de solo reconocer la casa de Jelash, una elfa baja de las escaleras"<<endl;
+            cout<<"-Abuela!- Jelash ve hacia arriba con una enorme sonrisa que solo su boca podia emitir"<<endl;
+            cout<<"La elfa anciana se alegra de ver a Jelash y con una mirada muy sincera \nse acerca a abrazarle"<<endl;
+            cout<<"La abuela te mira en seco y parece reconocerte enseguida"<<endl;
+            cout<<"Tu sin duda no le recuerdas de ningun lado"<<endl;
+            cout<<"-A que se debe el honor de tener a medio trono en esta \ncasa?- la abuela te mira directamente mientras pregunta"<<endl;
+            cout<<"No sabes a que se refiere y sin ocultar la confusion preguntas"<<endl;
+            cout<<"-No se a que se refiere, señora, lamento si hay un malentendido-"<<endl;
+            cout<<"Jelash ve a su abuela y asiente"<<endl;
+            cout<<"-En mis 5 mil años de vida jamas habia tenido a quien sera su majestad en mi casa-"<<endl;
+            cout<<"Sus palabras sonaban sinceras pero tu desconcierto permanecia"<<endl;
+            cout<<"-Jel, que no le has dicho a este humano lo que le espera en su corta vida?-"<<endl;
+            cout<<"Los ojos azules de Jelash se tonran un poco tirstes"<<endl;
+            cout<<"-La mision ha fallado y ha llegado a su fin- el tono de Jelash cambia abruptuamente"<<endl;
+            cout<<"-Que?- los huecos de tu memoria no se llenan pero ahora no parecen vacios"<<endl;
+            cout<<"-Su madre, la reina, me ordeno que le pusiera a prueba para ver si era capaz de tomar el trono de Mikal-"<<endl;
+            cout<<"-Hasta ahora, usted no ha pasado la prueba, por lo que se dira, no es apto para el puesto-"<<endl;
+            cout<<"Es mucha informacion que procesar para tu cerebro confundido, los recuerdos no \nllega y la informacion es insuficiente"<<endl;
+            cout<<"-Entiendo que no sea la mejor manera de enterarse, pero usted tomo estas decisiones y este camino-"<<endl;
+            cout<<"-En aproximadamente 12 horas recordara todo, ya que el hechizo se acabara"<<endl;
+            cout<<"Sigues sin entenderlo bien pero terminas por asentir"<<endl;
+            final();
         break;
         case 'F':
-
+            cout<<"El ambarcadero tenia un camino que era muy recto que no parecia tener fin"<<endl;
+            cout<<"-Avancemos hasta el reino, debe quedar como una hora de camino- una sonrisa de las tipicas en Jelash"<<endl;
+            cout<<"Durante una hora de camino la platica de el mundo, de las criaturas y Jelash no se terminaban"<<endl;
+            cout<<"La sonrisa siempre amable de Jelash inundaba tu corazon cada vez"<<endl;
+            cout<<"-Ya le viste?, ahi viven los humanos- Jelash señala con la mirada la gran muralla que rodea el reino"<<endl;
+            cout<<"Un gran letrero a pocos metros te indica el nombre del reino"<<endl;
+            cout<<"'MIKAL' lees en voz alta, y cuando tus plabaras terminan una sensacion muy familiar te invade"<<endl;
+            cout<<"Siguen adelante ignorando esas sensaciones"<<endl;
+            cout<<"Se van acercando a la entrada principal de la muralla y a su lados, \nmuchos visitantes de muchas razas esperan la entrada"<<endl;
+            cout<<"-Conozco un atajo- Jelash te jala cuando estas a punto de formarte en la fila de visitantes"<<endl;
+            cout<<"Ella se acerca mas a la enorme puerta de madera y en una esquina toca con fuerza"<<endl;
+            cout<<"La fuerta se abre y un guardia con armadura gris satinada asoma el cuerpo"<<endl;
+            cout<<"Los mira y se asombra, sin decir una palabra les abre y agacha la cabeza en algo que parece una reverencia"<<endl;
+            cout<<"Pasas sin mirar mucho a los guardias"<<endl;
+            cout<<"Entras a la muralla de la ciudad y salen por una esquina de esta"<<endl;
+            cout<<"-Vamos al centro, quiza recuerdes en que direccion vives-"<<endl;
+            cout<<"-Que gran idea- sonries a Jelash por lo que ella te devuelev la sonrisa"<<endl;
+            cout<<"Salen a las calles y una señora les fijamente y luego se secretea con otra"<<endl;
+            cout<<"Piensas qu ela gente puede estar criticando a Jelash por su manera de vestir o por su raza"<<endl;
+            cout<<"Caminan hasta el centro, y sientes como si cientos de personas te estuvieran viendo fijamente"<<endl;
+            cout<<"Volteas a todos lados y solo parecen desaparecer las miradas"<<endl;
+            cout<<"-Bien, para donde es tu casa "<<nombre<<"?- Jelas parece no estar incomoda con las miradas"<<endl;
+            cout<<"Te concentras en recordar y tus pies empeizan a caminar practicamnete solos"<<endl;
+            cout<<"La avenida principal es enorme y caminar a traves de ella no fue complicado"<<endl;
+            cout<<"Jelash te sigue con tranquilidad y expectaiva"<<endl;
+            cout<<"Cierras los ojos para intentar recordar con mas precision"<<endl;
+            cout<<"Continuas caminando y tras unos pocos segundos y una vuelta"<<endl;
+            cout<<"Abres los ojos y un gran castillo se cierne ante ti"<<endl;
+            cout<<"Aun mas confusion te inunda cuando sin preguntar, ni avisar, las \npuertas de la entrada principal se abren para ti"<<endl;
+            cout<<"Volteas a ver a Jelash"<<endl;
+            cout<<"Ella sonrie y asiente con amabilidad"<<endl;
+            cout<<"-Que esta pasando?- te regresas para preguntarle"<<endl;
+            cout<<"-Me parece que ha encontrado su hogar- el tono de Jelash cambia "<<endl;
+            cout<<"-Su madre siempre dice 'Un rey que no reconoce su pueblo, no debe ser rey'-"<<endl;
+            cout<<"-Felicidades alteza "<<nombre<<" ha superado la prueba que impuso su madre-"<<endl;
+            cout<<"De repente, el hueco en tu memoria se siente menos vacio y auqnue \nsigue siendo borroso, no es igual de incierto"<<endl;
+            cout<<"Detras de Jelash la gente te mira con asombro y respeto"<<endl;
+            cout<<"Formas parte de la familia Mikal y eres uno de los 2 posibles herederos al trono"<<endl;
+            cout<<"-Jel?- recuerdas el apodo que le pusiste a Jelash en tu infancia"<<endl;
+            cout<<"-Aqui estoy "<<nombre<<", felicidades"<<endl;
+            cout<<"Se acerca a abrazarte y..."<<endl;
+            final();
         break;
     }
     return 0;
